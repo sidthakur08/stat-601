@@ -36,4 +36,8 @@ ggplot(data,aes(x=x2,y=y))+
   geom_point(color="cornflowerblue")+
   labs(title="x2 vs y")
 
-s
+################### MODEL ###################
+lm_fit = lm(y~x1+x2,data)
+summary(lm_fit)
+
+
